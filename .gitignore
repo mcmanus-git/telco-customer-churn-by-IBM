@@ -130,3 +130,5 @@ dmypy.json
 
 # JetBrains junk
 .idea
+.DS_Store
+EDA/.DS_Store
