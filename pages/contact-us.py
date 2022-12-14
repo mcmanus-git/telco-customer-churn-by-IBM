@@ -12,7 +12,7 @@ dash.register_page(
 
 line_break = html.Div([dcc.Markdown("""___""")], style={'margin': '5% 0% 5% 0%'})
 
-creator_header = html.H1('About the Creator', style={'textAlign': 'center', 'margin': '10% 0% 5% 0%'})
+creator_header = html.H1('About the Creator', style={'textAlign': 'center', 'margin': '5% 0% 5% 0%'})
 contact_creator_header = html.H4('-   Contact Me   -', style={'textAlign': 'center'})
 about_the_creator = dcc.Markdown("""Michael McManus is a Data Scientist for a regulated gas and electric utility 
 in Michigan, U.S. His work focuses on electric grid reliability and resiliency as it relates to forestry related power 
@@ -109,7 +109,7 @@ def layout():
             html.Br(),
             contact_links
         ],
-        style={'margin': '5% 10% 5% 10%'}
+        # style={'margin': '5% 10% 5% 10%'}
     )
 
     return layout

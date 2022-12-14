@@ -12,7 +12,7 @@ dash.register_page(
 
 line_break = html.Div([dcc.Markdown("""___""")], style={'margin': '5% 0% 5% 0%'})
 
-about_header = html.H1('About the Project', style={'textAlign': 'center', 'margin': '10% 0% 5% 0%'})
+about_header = html.H1('About the Project', style={'textAlign': 'center', 'margin': '5% 0% 5% 0%'})
 contact_creator_header = html.H4('-   Contact Me   -', style={'textAlign': 'center'})
 about_the_project1 = dcc.Markdown("""This project was inspired by a colleague who turned me on to [Uber's Hexagonal 
 Hierarchical Spatial Index](https://www.uber.com/blog/h3/), better known as H3. While working on a project together, my
@@ -61,7 +61,7 @@ def layout():
             html.Br(),
             html.Br(),
         ],
-        style={'margin': '5% 10% 5% 10%'}
+        # style={'margin': '5% 10% 5% 10%'}
     )
 
     return layout

@@ -22,6 +22,7 @@ def create_navbar():
                 nav=True,
                 in_navbar=True,
                 label="Menu",
+                align_end=True,
                 children=[
                     dbc.DropdownMenuItem("Home", href='/'),
                     dbc.DropdownMenuItem(divider=True),
@@ -38,6 +39,7 @@ def create_navbar():
         dark=True,  # Change this to change color of text within the navbar (False for dark text)
         fluid=True,
         expand="sm",
+        style={"padding": "2vh 10vw 2vh 10vw"}
     )
 
     return navbar

@@ -56,8 +56,8 @@ app.layout = dbc.Container(
                 dash.page_container
             ],
             style={
-                'margin': '5% 5% 5% 5%',
-                "min-height": "83vh"
+                'margin': '5vh 10vw 5vh 10vw',
+                "min-height": "78vh",
             },
         ),
         footer

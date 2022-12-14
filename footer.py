@@ -38,6 +38,7 @@ def create_footer():
         dark=True,  # Change this to change color of text within the navbar (False for dark text)
         expand=True,
         fluid=True,
+        style={"padding": "1vh"}
     )
 
     return footer
