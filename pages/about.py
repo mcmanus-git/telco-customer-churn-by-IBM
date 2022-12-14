@@ -35,6 +35,8 @@ thing left for me to do was to work out some bugs and figure out how to create t
 the ol' "drag and drop" method.  All my code is available on my 
 [GitHub](https://github.com/mcmanus-git/NYC-street-tree-planting) page for review in case you're curious to learn. Hope 
 you enjoy.  Cheers!  
+
+
 **If you're interested in working on a project together, or you have need of some data science wizardry, please visit my 
 [contact page](/contact-us) for more details.**  
 """)
@@ -53,17 +55,6 @@ def layout():
             about_header,
             html.Br(),
             about_the_project1,
-            html.Br(),
-            html.Br(),
-            html.Div(
-                html.Img(
-                    src='assets/kepler_screen.jpg',
-                    title="Kepler.gl Home",
-                    style={'height': '75%', 'width': '75%'}
-                ),
-                style={'textAlign': 'center'}
-            ),
-            html.P('Keppler.gl Home Captured 8/15/2022 by Author', style={'fontSize': 10}),
             html.Br(),
             html.Br(),
             about_the_project2,

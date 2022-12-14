@@ -14,12 +14,14 @@ navbar = create_navbar()
 footer = create_footer()
 FA47 = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'
 FA512 = "https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+FA6 = "https://use.fontawesome.com/releases/v6.2.0/css/all.css"
 
 app = dash.Dash(__name__,
                 suppress_callback_exceptions=True,
                 external_stylesheets=[dbc.themes.FLATLY,
                                       FA47,
                                       FA512,
+                                      FA6
                                       ],
                 use_pages=True,
                 )
@@ -30,7 +32,7 @@ app.index_string = '''
 <html>
     <head>
         {%metas%}
-        <title>NYC Street Trees</title>
+        <title>TelCom Customer Churn</title>
         {%favicon%}
         {%css%}
     </head>
@@ -46,25 +48,18 @@ app.index_string = '''
 </html>
 '''
 
-# app.layout = dcc.Loading(
-#     id='loading_page_content',
-#     children=[
-#         html.Div(
-#             [
-#                 navbar,
-#                 dash.page_container
-#             ],
-#             style={"width": "100vw", "height": "100vh"}
-#         )
-#     ],
-#     color='#333B52',
-#     fullscreen=True
-# )
-
 app.layout = dbc.Container(
     [
         navbar,
-        dash.page_container,
+        html.Main(
+            [
+                dash.page_container
+            ],
+            style={
+                'margin': '5% 5% 5% 5%',
+                "min-height": "83vh"
+            },
+        ),
         footer
     ],
     fluid=True,
